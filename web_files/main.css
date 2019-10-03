@@ -1,0 +1,95 @@
+.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 900px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+section {
+    min-width: 710px;
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+h2 {
+    text-align: center;
+}
+
+.fancy {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+
+.fancy th {
+    border: 1px solid black;
+}
+
+.fancy td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.fancy tr:nth-child(even) {background-color: #f2f2f2;}
+
+.fancy .invis {
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0);
+    width: 100px;
+}
+
+.fancy .invis button:hover {
+    background-color: rgb(167, 57, 57);
+}
+
+.fancy .invis form {
+    display: inline;
+}
+
+.fancy .invis button {
+    background-color: rgb(177, 105, 105);
+}
+
+.plain {
+    margin: auto;
+    border-spacing:1em;
+}
+
+.plain td {
+    min-width: 100px;
+}
+
+.plain input, select {
+    padding: 5px;
+}
+
+.plain input {
+    width: 400px;
+    /* border-radius: 1px; */
+}
+
+button {
+    width: 100px;
+    padding: 5px;
+    background-color: rgb(65, 92, 212);
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+
+#Progress_Status { 
+    width: 50%; 
+    background-color: #ddd; 
+  } 
+    
+  #myprogressBar { 
+    width: 0%; 
+    height: 20px; 
+    background-color: #4CAF50; 
+  } 
