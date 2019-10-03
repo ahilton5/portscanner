@@ -162,4 +162,3 @@ if __name__ == "__main__":
         ports = parsePorts(args.ports)
         scans.append({'hosts': [args.host], 'ports': ports, 'protocol': 'TCP'})
         runScan()
-        print('Done. Output saved to', args.saveto, file=sys.stderr)
