@@ -31,4 +31,4 @@ If I were to want to run it with the web interface, I would enter the following 
 ```python3 portscanner.py savehere.html```
 
 If I were to want to run it entirely on the command-line, I would enter a command such as the following:
-```python3 portscanner.py savehere.txt --host 167.99.109.5 --ports 25,80-90```
+```python3 portscanner.py savehere.html --host 167.99.109.5 --ports 25,80-90```
