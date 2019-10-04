@@ -161,13 +161,12 @@ def serve_frontend(filename):
         return static_file(filename, os.getcwd() + "/web_files/")
 
 if __name__ == "__main__":
+    with open('web_files/main.css', 'r') as f:
+        style = "<style>" + f.read() + "</style>"
     if args.host == '' or args.ports == '':
         print('Program is listening on http://localhost:8088.',file=sys.stderr)
-        style = '<link rel="stylesheet" href="main.css"/>'
         run(host='localhost', port=8088, quiet=True)
     else:
-        with open('web_files/main.css', 'r') as f:
-            style = "<style>" + f.read() + "</style>"
         ports = parsePorts(args.ports)
         scans.append({'hosts': [args.host], 'hostStr': args.host, 'ports': ports, 'protocol': 'TCP'})
         runScan()
