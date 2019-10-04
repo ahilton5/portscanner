@@ -1,10 +1,11 @@
 # portscanner
+Scan ports on either TCP or UDP. portscanner can be run entirely on the command-line or with a web interface. The output will be saved as an html file.
 
 ## Dependencies
 bottle, scapy, and IPy.
 
 ## Instructions
-portscanner can be run entirely on the command-line or with a web interface. The command-line usage is as follows:
+The command-line usage is as follows:
 ```
 usage: portscanner.py [-h] [--host HOST] [--ports PORTS] [--timeout TIMEOUT]
                       saveto
