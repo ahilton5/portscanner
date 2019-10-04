@@ -9,7 +9,6 @@
 
 section {
     min-width: 710px;
-    /* border: 1px solid black; */
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
@@ -70,7 +69,6 @@ h2 {
 
 .plain input {
     width: 400px;
-    /* border-radius: 1px; */
 }
 
 button {
@@ -86,10 +84,23 @@ button {
 #Progress_Status { 
     width: 50%; 
     background-color: #ddd; 
-  } 
-    
-  #myprogressBar { 
+} 
+
+#myprogressBar { 
     width: 0%; 
     height: 20px; 
     background-color: #4CAF50; 
-  } 
+} 
+
+.report {
+    border-collapse:collapse;
+}
+
+.report th {
+    min-width: 125px;
+    border: 1px solid black;
+}
+
+.report td {
+    border: 1px solid black;
+}

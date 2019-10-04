@@ -66,7 +66,7 @@
                     <td>{{total}} total ports will be scanned.</td>
                 </tr>
                 <tr>
-                    <td>In the worst case scenario, this will take 1 second per port.</td>
+                    <td>In the worst case scenario, this will take {{timeout}} second(s) per port.</td>
                 </tr>
                 <tr>
                     <td></td>
